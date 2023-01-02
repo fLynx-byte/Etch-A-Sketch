@@ -4,7 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="title">Etch-A-Sketch</h1>
+    </header>
+    <main class="main">
+      <div class="settings">
+        <button id="reset">Reset</button>
+        <button id="rgb">RGB</button>
+        <div class="colorPrompt">
+          <input type="color" id="color" />
+          <p>Choose a Color</p>
+        </div>
+        <div class="sliderValue">
+          <input type="range" min="2" max="100" value="16" id="slider" />
+          <div id="sizeValue">16 x 16</div>
+        </div>
+      </div>
+      <div class="grid"></div>
+    </main>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Raymond Bellin
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

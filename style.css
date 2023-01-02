@@ -1,0 +1,18 @@
+* {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.grid {
+  margin-top: 50px;
+  display: inline-grid;
+  grid-template-columns: repeat(16, 2fr);
+  grid-template-rows: repeat(16, 2fr);
+  border: 5px solid white;
+  border-radius: 5px;
+  height: 575px;
+  width: 575px;
+  background-color: gray;
+}
+.cell {
+  background-color: white;
+  border: 1px solid black;
+}
